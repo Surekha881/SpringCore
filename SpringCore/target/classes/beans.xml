@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+<bean class = "com.infy.model.User" id ="user">
+<property name = "userId" value ="1"></property>
+<property name ="name" value="surekha"></property>
+</bean>
+
+<bean class = "com.infy.model.User" id ="user2">
+<constructor-arg value="3"></constructor-arg>
+<constructor-arg value ="rekha"></constructor-arg>
+<property name="skills">
+<list>
+<value>java</value>
+<value>SQL</value>
+<value>hibernate</value>
+</list>
+</property>
+</bean>
+</beans>
