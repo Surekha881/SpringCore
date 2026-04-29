@@ -26,6 +26,7 @@ public class PatientServiceImpl implements PatientService {
 	    private PasswordEncoder passwordEncoder;
 	  @Override
 	  public Patient signup(Patient patient) {
+		  System.out.println("changes need to be done");
 		  
 		  patient.setPatientPassword(passwordEncoder.encode(patient.getPatientPassword()));
 		  return repo.save(patient);
