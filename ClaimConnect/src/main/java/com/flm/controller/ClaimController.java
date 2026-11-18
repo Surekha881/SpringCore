@@ -13,7 +13,7 @@ public class ClaimController {
 
     @GetMapping("/get/{id}")
     public ResponseEntity<ClaimDTO> getDetails(@RequestBody Claim claim){
-        ClaimDTO dto;
+        ClaimDTO dto; 
     }
 
 
