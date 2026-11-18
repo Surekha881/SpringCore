@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClaimController {
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<ClaimDTO> getDetails
+    public ResponseEntity<ClaimDTO> getDetails(@RequestBody CLaim claim){
+    }
 
 
 }
